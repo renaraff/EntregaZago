@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext(0);
 
 function AuthProvider({ children }) {
-    const [logado, setLogado] = useState(false);
+    const [logado, setLogado] = useState(true); //voltar pra false dps que passar pra sla oq do zago
     const [error, setError] = useState(false);
 
     async function Login(email, senha) {
